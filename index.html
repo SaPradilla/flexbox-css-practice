@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Css Flexbox</title>
+</head>
+<body>
+    <h1>Flexbox practice</h1>
+    <main class="flex_box">
+
+        <!-- flex-direction -->
+        <div class="flex_box__container">
+            <h2 class="title">flex-direction</h2>
+            <h2>row (default)</h2>
+            <div class="flex_direction__row flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+           
+            <h2> row-reverse </h2>
+            <div class="flex_direction__row-reverse flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+           
+            <h2>column</h2>
+            <div class="flex_direction__column flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+           
+            <h2> column reverse </h2>
+            <div class="flex_direction__column-reverse flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+        </div>
+        <hr>
+        <!-- flex-wrap -->
+        <div class="flex_box__container">
+            <h2 class="title">flex-wrap</h2>
+            <h2> nowrap (default) </h2>
+            <div class="flex_wrap__nowrap flex_box__content ">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2> wrap </h2>
+            <div class="flex_wrap__wrap flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2> wrap-reverse </h2>
+            <div class="flex_wrap__wrap-reverse flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- flex-flow -->
+        <div class="flex_box__container">
+            <h2 class="title">flex-flow</h2>
+            <h2>Esta es una abreviatura de las propiedades flex-directiony flex-wrap, que juntas definen los ejes principal y transversal del contenedor flexible. El valor predeterminado es row nowrap.</h2>
+            <div class="flex_flow flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+    
+        </div>
+
+        <hr>
+
+        <!-- justity-content -->
+        <div class="flex_box__container">
+            <h2 class="title">justify-content</h2>
+            <h2>flex-start</h2>
+            <div class="flex_start flex_box__content">
+                <div class="child">1</div>
+                <div class="child child--width">2</div>
+                <div class="child">3</div>
+                <div class="child child--width">4</div>
+            </div>
+            <h2>flex-end</h2>
+            <div class="flex_end flex_box__content">
+                <div class="child">1</div>
+                <div class="child child--width">2</div>
+                <div class="child">3</div>
+                <div class="child child--width">4</div>
+            </div>
+            <h2>center</h2>
+            <div class="center flex_box__content">
+                <div class="child">1</div>
+                <div class="child child--width">2</div>
+                <div class="child child--width">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>space-between</h2>
+            <div class="space_between flex_box__content">
+                <div class="child">1</div>
+                <div class="child child--width">2</div>
+                <div class="child child--width">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>space-around</h2>
+            <div class="space_around flex_box__content">
+                <div class="child">1</div>
+                <div class="child child--width">2</div>
+                <div class="child child--width">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>space-evenly</h2>
+            <div class="space_evenly flex_box__content">
+                <div class="child">1</div>
+                <div class="child child--width">2</div>
+                <div class="child child--width">3</div>
+                <div class="child">4</div>
+            </div>
+        </div>
+        <hr>
+
+
+        <!-- align-items -->
+        <div class="flex_box__container flex_box__container--align">
+            <h2 class="title">align-items</h2>
+            <h2>flex-start</h2>
+            <div class="flex_start flex_box__content">
+                <div class="child child--height4">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>flex-end</h2>
+            <div class="flex_end flex_box__content">
+                <div class="child child--height4">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>center</h2>
+            <div class="center flex_box__content">
+                <div class="child child--height4">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>stretch</h2>
+            <div class="stretch flex_box__content">
+                <div class="child ">1</div>
+                <div class="child">2</div>
+                <div class="child ">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>baseline</h2>
+            <div class="baseline flex_box__content">
+                <div class="child child--height4">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- align-content -->
+        <div class="flex_box__container flex_box__container--align-content">
+            <h2 class="title">align-content</h2>
+            <h2>flex-start</h2>
+            <div class="flex_start flex_box__content">
+                
+                <div class="child child--height4">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+                <div class="child">6</div>
+            </div>
+            <h2>flex-end</h2>
+            <div class="flex_end flex_box__content">
+                <div class="child child--height4">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+                <div class="child">6</div>
+            </div>
+            <h2>center</h2>
+            <div class="center flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>stretch</h2>
+            <div class="stretch flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+            </div>
+            <h2>baseline</h2>
+            <div class="baseline flex_box__content">
+                <div class="child child--height4">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+                <div class="child">6</div>
+            </div>
+        </div>
+        <hr>
+        <!-- gap, row-gap, column-gap -->
+        <div class="flex_box__container">
+            <h2 class="title"> gap, row-gap, column-gap</h2>
+            <h2> gap </h2>
+            <div class="gap flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+            </div>
+        
+            <h2> row-gap </h2>
+            <div class="row_gap flex_box__content flex_box__content--gap">
+                <div class="flex_box__content">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child child--height8">3</div>
+                    <div class="child">4</div>
+                    <div class="child">5</div>
+                </div>
+                <div class="flex_box__content">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child child--height8">3</div>
+                    <div class="child">4</div>
+                    <div class="child">5</div>
+                </div>
+            </div>
+
+            <h2> column-gap </h2>
+            <div class="column_gap flex_box__content">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child child--height8">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
